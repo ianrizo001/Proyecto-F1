@@ -4,69 +4,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Conoce los orígenes y la evolución tecnológica de la Fórmula 1.">
+    <meta name="description" content="Conoce la historia, evolución y avances tecnológicos de la Fórmula 1.">
+    <meta name="theme-color" content="#111318">
     <title>F1 Apex | Historia</title>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1><i class="fa-solid fa-flag-checkered"></i> F1 Apex</h1>
-        <nav aria-label="Navegación principal">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="historia.html" aria-current="page">Historia</a></li>
-                <li><a href="equipos.html">Equipos</a></li>
-                <li><a href="circuitos.html">Circuitos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">F1 <span>APEX</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="historia.html">Historia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="equipos.html">Equipos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="circuitos.html">Circuitos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main class="container">
-        <section class="my-4">
-            <h2><i class="fa-solid fa-clock-rotate-left"></i> La historia de la Fórmula 1</h2>
-            <p>
-                La Fórmula 1 es una categoría internacional del automovilismo
-                reconocida por la velocidad, la innovación y la competencia
-                entre pilotos y escuderías.
-            </p>
+        <section aria-labelledby="titulo-historia">
+            <span class="etiqueta">DESDE 1950</span>
+            <h1 id="titulo-historia">La historia de <span>Fórmula 1</span></h1>
+            <p>Desde sus primeras temporadas hasta los monoplazas actuales, la Fórmula 1 ha evolucionado en velocidad, seguridad, tecnología y competencia.</p>
+            <img class="img-fluid rounded-4 my-3" src="img/historia.jpg" alt="Automóvil de competición que representa la evolución del automovilismo" loading="lazy">
         </section>
 
-        <section class="my-4">
-            <h2>Los orígenes</h2>
-            <p>
-                El Campeonato Mundial de Fórmula 1 comenzó en 1950.
-                La primera carrera puntuable de aquella temporada se celebró
-                en Silverstone, Reino Unido.
-            </p>
+        <section aria-labelledby="titulo-inicios">
+            <h2 id="titulo-inicios">Los primeros años</h2>
+            <article>
+                <h3>El nacimiento del campeonato</h3>
+                <p>El Campeonato Mundial de Pilotos de Fórmula 1 comenzó en 1950. Desde sus primeras carreras, reunió a pilotos y fabricantes que buscaban destacar en una de las competencias más exigentes del automovilismo.</p>
+                <p>Con el paso de los años, el campeonato incorporó nuevos circuitos, equipos y avances que transformaron la forma de competir.</p>
+            </article>
         </section>
 
-        <section class="my-4">
-            <h2>La evolución tecnológica</h2>
-            <p>
-                Con el paso del tiempo, los monoplazas incorporaron avances
-                en aerodinámica, motores, neumáticos y sistemas de seguridad.
-                La tecnología se convirtió en un factor esencial para competir.
-            </p>
+        <section aria-labelledby="titulo-evolucion">
+            <h2 id="titulo-evolucion">Una evolución constante</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <article>
+                        <h3><i class="fa-solid fa-gears" aria-hidden="true"></i> Tecnología</h3>
+                        <p>Los motores, la aerodinámica, los materiales y los sistemas electrónicos han cambiado de manera importante el rendimiento de los monoplazas.</p>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article>
+                        <h3><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Seguridad</h3>
+                        <p>Las estructuras de protección, los cascos, los sistemas de retención y las mejoras en los circuitos han ayudado a reducir riesgos para los pilotos.</p>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article>
+                        <h3><i class="fa-solid fa-gauge-high" aria-hidden="true"></i> Rendimiento</h3>
+                        <p>La búsqueda de mayor velocidad ha impulsado el desarrollo de motores eficientes, mejores frenos y soluciones aerodinámicas.</p>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article>
+                        <h3><i class="fa-solid fa-leaf" aria-hidden="true"></i> Eficiencia</h3>
+                        <p>La categoría ha desarrollado unidades de potencia híbridas y continúa trabajando en tecnologías y combustibles con menor impacto ambiental.</p>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <section class="my-4">
-            <h2>La Fórmula 1 actual</h2>
-            <p>
-                En la actualidad, los equipos combinan simulaciones,
-                análisis de datos, estrategias de carrera y trabajo en equipo
-                para obtener el mejor rendimiento de sus monoplazas.
-            </p>
+        <section aria-labelledby="titulo-importancia">
+            <h2 id="titulo-importancia">¿Por qué es tan importante?</h2>
+            <div class="info-box">
+                <p>La Fórmula 1 combina deporte, ingeniería, estrategia y trabajo en equipo. Los datos recopilados durante cada sesión ayudan a decidir los ajustes del automóvil, la estrategia de carrera y el momento adecuado para cambiar neumáticos.</p>
+                <a href="equipos.html" class="btn btn-danger">Conocer las escuderías</a>
+            </div>
         </section>
-
-        <p><a href="equipos.html">Continúa conociendo los equipos</a></p>
     </main>
 
     <footer>
-        <p>F1 Apex | Proyecto académico sobre Fórmula 1.</p>
+        <div class="container">
+            <a class="navbar-brand" href="index.html">F1 <span>APEX</span></a>
+            <p>Velocidad, tecnología y pasión por el automovilismo.</p>
+            <div class="redes-sociales">
+                <a href="https://www.formula1.com/" target="_blank" rel="noopener noreferrer" aria-label="Sitio oficial de Fórmula 1"><i class="fa-solid fa-flag-checkered" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/f1/" target="_blank" rel="noopener noreferrer" aria-label="Fórmula 1 en Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/F1" target="_blank" rel="noopener noreferrer" aria-label="Fórmula 1 en YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+            </div>
+            <p>Proyecto académico F1 Apex · 2026</p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

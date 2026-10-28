@@ -4,73 +4,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descubre circuitos conocidos del calendario de Fórmula 1.">
+    <meta name="description" content="Conoce algunos de los circuitos más reconocidos de la Fórmula 1.">
+    <meta name="theme-color" content="#111318">
     <title>F1 Apex | Circuitos</title>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1><i class="fa-solid fa-flag-checkered"></i> F1 Apex</h1>
-        <nav aria-label="Navegación principal">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="historia.html">Historia</a></li>
-                <li><a href="equipos.html">Equipos</a></li>
-                <li><a href="circuitos.html" aria-current="page">Circuitos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">F1 <span>APEX</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="equipos.html">Equipos</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="circuitos.html">Circuitos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main class="container">
-        <section class="my-4">
-            <h2><i class="fa-solid fa-flag"></i> Circuitos de Fórmula 1</h2>
-            <p>
-                Cada circuito tiene características propias que ponen a prueba
-                la habilidad de los pilotos y la estrategia de los equipos.
-            </p>
+        <section aria-labelledby="titulo-circuitos">
+            <span class="etiqueta">ESCENARIOS DE COMPETICIÓN</span>
+            <h1 id="titulo-circuitos">Circuitos <span>legendarios</span></h1>
+            <p>Cada trazado presenta retos diferentes: curvas rápidas, frenadas exigentes, rectas largas y zonas en las que la estrategia puede cambiar una carrera.</p>
+            <img class="img-fluid rounded-4 my-3" src="img/circuitos.jpg" alt="Vista panorámica de un circuito de automovilismo" loading="lazy">
         </section>
 
-        <section class="my-4">
-            <h2>Circuito de Mónaco</h2>
-            <p>
-                Ubicado en las calles de Montecarlo, es conocido por su trazado
-                estrecho y por exigir mucha precisión al volante.
-            </p>
+        <section aria-labelledby="titulo-destacados">
+            <h2 id="titulo-destacados">Trazados que hacen historia</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <article class="card">
+                        <img src="img/monaco.jpg" class="card-img-top" alt="Circuito urbano de Mónaco" loading="lazy">
+                        <div class="card-body">
+                            <span class="etiqueta">MÓNACO</span>
+                            <h3 class="card-title">Circuito de Mónaco</h3>
+                            <p class="card-text">Un circuito urbano estrecho, con curvas cerradas y poco margen de error. La clasificación suele ser especialmente importante.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <article class="card">
+                        <img src="img/monza.jpg" class="card-img-top" alt="Circuito de Monza en Italia" loading="lazy">
+                        <div class="card-body">
+                            <span class="etiqueta">ITALIA</span>
+                            <h3 class="card-title">Autodromo Nazionale Monza</h3>
+                            <p class="card-text">Es famoso por sus largas rectas, las altas velocidades y la importancia de la eficiencia aerodinámica.</p>
+                        </div>
+                    </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <article class="card">
+                        <img src="img/suzuka.jpg" class="card-img-top" alt="Trazado del circuito de Suzuka en Japón" loading="lazy">
+                        <div class="card-body">
+                            <span class="etiqueta">JAPÓN</span>
+                            <h3 class="card-title">Suzuka</h3>
+                            <p class="card-text">Su trazado en forma de ocho y sus curvas enlazadas exigen precisión, equilibrio y confianza del piloto.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <article class="card">
+                        <img src="img/silverstone.jpg" class="card-img-top" alt="Circuito de Silverstone en Reino Unido" loading="lazy">
+                        <div class="card-body">
+                            <span class="etiqueta">REINO UNIDO</span>
+                            <h3 class="card-title">Silverstone</h3>
+                            <p class="card-text">Un circuito conocido por sus curvas rápidas y por la exigencia aerodinámica que impone a los monoplazas.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <article class="card">
+                        <img src="img/interlagos.jpg" class="card-img-top" alt="Circuito de Interlagos en Brasil" loading="lazy">
+                        <div class="card-body">
+                            <span class="etiqueta">BRASIL</span>
+                            <h3 class="card-title">Interlagos</h3>
+                            <p class="card-text">Su trazado con desniveles y cambios de dirección ofrece carreras exigentes y oportunidades de adelantamiento.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <article class="card">
+                        <img src="img/mexico.jpg" class="card-img-top" alt="Autódromo Hermanos Rodríguez en Ciudad de México" loading="lazy">
+                        <div class="card-body">
+                            <span class="etiqueta">MÉXICO</span>
+                            <h3 class="card-title">Autódromo Hermanos Rodríguez</h3>
+                            <p class="card-text">El circuito mexicano destaca por la altitud de la ciudad, el ambiente de los aficionados y su emblemática zona del estadio.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <section class="my-4">
-            <h2>Circuito de Silverstone</h2>
-            <p>
-                Situado en Reino Unido, fue sede de la primera carrera
-                puntuable del Campeonato Mundial de Fórmula 1 en 1950.
-            </p>
+        <section aria-labelledby="titulo-desafio">
+            <h2 id="titulo-desafio">¿Qué hace especial a un circuito?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <article>
+                        <h3><i class="fa-solid fa-road" aria-hidden="true"></i> Trazado</h3>
+                        <p>La combinación de curvas y rectas influye en los adelantamientos y en la puesta a punto del automóvil.</p>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article>
+                        <h3><i class="fa-solid fa-temperature-half" aria-hidden="true"></i> Condiciones</h3>
+                        <p>La temperatura, el clima y el estado del asfalto afectan al agarre y al desgaste de los neumáticos.</p>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article>
+                        <h3><i class="fa-solid fa-flag-checkered" aria-hidden="true"></i> Estrategia</h3>
+                        <p>Las paradas en boxes, el tráfico y las oportunidades durante la carrera pueden cambiar el resultado final.</p>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <section class="my-4">
-            <h2>Spa-Francorchamps</h2>
-            <p>
-                Este circuito belga destaca por sus cambios de elevación,
-                sus curvas rápidas y la famosa combinación Eau Rouge-Raidillon.
-            </p>
+        <section class="info-box">
+            <h2>Descubre más sobre la F1</h2>
+            <p>Conoce a los equipos que preparan los monoplazas para enfrentarse a estos desafíos.</p>
+            <a href="equipos.html" class="btn btn-danger">Ver escuderías</a>
         </section>
-
-        <section class="my-4">
-            <h2>Autódromo Hermanos Rodríguez</h2>
-            <p>
-                Ubicado en la Ciudad de México, es conocido por la altitud,
-                el ambiente de los aficionados y el paso por la zona del estadio.
-            </p>
-        </section>
-
-        <p><a href="contacto.html">Comparte tu opinión sobre la F1</a></p>
     </main>
 
     <footer>
-        <p>F1 Apex | Proyecto académico sobre Fórmula 1.</p>
+        <div class="container">
+            <a class="navbar-brand" href="index.html">F1 <span>APEX</span></a>
+            <p>Velocidad, tecnología y pasión por el automovilismo.</p>
+            <div class="redes-sociales">
+                <a href="https://www.formula1.com/" target="_blank" rel="noopener noreferrer" aria-label="Sitio oficial de Fórmula 1"><i class="fa-solid fa-flag-checkered" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/f1/" target="_blank" rel="noopener noreferrer" aria-label="Fórmula 1 en Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/F1" target="_blank" rel="noopener noreferrer" aria-label="Fórmula 1 en YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+            </div>
+            <p>Proyecto académico F1 Apex · 2026</p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

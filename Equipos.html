@@ -4,84 +4,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Conoce algunas de las escuderías históricas de la Fórmula 1.">
-    <title>F1 Apex | Equipos</title>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <meta name="description" content="Explora las escuderías, los monoplazas y los pilotos de la Fórmula 1.">
+    <meta name="theme-color" content="#111318">
+    <title>F1 Apex | Equipos y pilotos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1><i class="fa-solid fa-flag-checkered"></i> F1 Apex</h1>
-        <nav aria-label="Navegación principal">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="historia.html">Historia</a></li>
-                <li><a href="equipos.html" aria-current="page">Equipos</a></li>
-                <li><a href="circuitos.html">Circuitos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">F1 <span>APEX</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="equipos.html">Equipos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="circuitos.html">Circuitos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main class="container">
-        <section class="my-4">
-            <h2><i class="fa-solid fa-car"></i> Equipos de Fórmula 1</h2>
-            <p>
-                Las escuderías desarrollan los monoplazas y coordinan el
-                trabajo de pilotos, ingenieros y estrategas para competir
-                en cada Gran Premio.
-            </p>
+        <section aria-labelledby="titulo-equipos">
+            <span class="etiqueta">LOS PROTAGONISTAS</span>
+            <h1 id="titulo-equipos">Escuderías y <span>pilotos</span></h1>
+            <p>Cada equipo reúne ingenieros, estrategas, mecánicos y pilotos para desarrollar el monoplaza y competir al máximo nivel.</p>
         </section>
 
-        <div class="row g-4">
-            <div class="col-12 col-md-6">
-                <section class="h-100">
-                    <h2>Scuderia Ferrari</h2>
-                    <p>
-                        Ferrari es una de las escuderías históricas de la
-                        categoría y es reconocida por su tradicional color rojo.
-                    </p>
-                </section>
+        <section aria-labelledby="titulo-escuderias">
+            <h2 id="titulo-escuderias">Equipos de Fórmula 1</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <article class="card">
+                        <img src="img/ferrari.jpg" class="card-img-top" alt="Monoplaza rojo de la escudería Ferrari" loading="lazy">
+                        <div class="card-body">
+                            <span class="etiqueta">ITALIA</span>
+                            <h3 class="card-title">Scuderia Ferrari</h3>
+                            <p class="card-text">Una de las escuderías más emblemáticas del automovilismo, reconocida por su tradición y el color rojo de sus monoplazas.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <article class="card">
+                        <img src="img/mclaren.jpg" class="card-img-top" alt="Monoplaza de competición de McLaren" loading="lazy">
+                        <div class="card-body">
+                            <span class="etiqueta">REINO UNIDO</span>
+                            <h3 class="card-title">McLaren</h3>
+                            <p class="card-text">Equipo con una larga trayectoria en la categoría, conocido por su innovación técnica y sus logros deportivos.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <article class="card">
+                        <img src="img/mercedes.jpg" class="card-img-top" alt="Monoplaza de Mercedes en una pista de carreras" loading="lazy">
+                        <div class="card-body">
+                            <span class="etiqueta">ALEMANIA</span>
+                            <h3 class="card-title">Mercedes</h3>
+                            <p class="card-text">Escudería reconocida por su desarrollo de ingeniería, análisis de datos y rendimiento en pista.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <article class="card">
+                        <img src="img/red-bull.jpg" class="card-img-top" alt="Monoplaza de Red Bull Racing durante una carrera" loading="lazy">
+                        <div class="card-body">
+                            <span class="etiqueta">AUSTRIA</span>
+                            <h3 class="card-title">Red Bull Racing</h3>
+                            <p class="card-text">Equipo que ha destacado por su enfoque aerodinámico, estrategia competitiva y resultados en campeonatos.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <article class="card">
+                        <img src="img/aston-martin.jpg" class="card-img-top" alt="Monoplaza verde de Aston Martin" loading="lazy">
+                        <div class="card-body">
+                            <span class="etiqueta">REINO UNIDO</span>
+                            <h3 class="card-title">Aston Martin</h3>
+                            <p class="card-text">Escudería que combina ingeniería, desarrollo tecnológico y una identidad visual distintiva en la parrilla.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <article class="card">
+                        <img src="img/williams.jpg" class="card-img-top" alt="Monoplaza de Williams en un circuito" loading="lazy">
+                        <div class="card-body">
+                            <span class="etiqueta">REINO UNIDO</span>
+                            <h3 class="card-title">Williams Racing</h3>
+                            <p class="card-text">Escudería histórica que forma parte de la trayectoria del campeonato y de su evolución técnica.</p>
+                        </div>
+                    </article>
+                </div>
             </div>
+        </section>
 
-            <div class="col-12 col-md-6">
-                <section class="h-100">
-                    <h2>McLaren</h2>
-                    <p>
-                        McLaren cuenta con una larga trayectoria en la Fórmula 1
-                        y se ha distinguido por sus avances técnicos y sus logros.
-                    </p>
-                </section>
+        <section aria-labelledby="titulo-pilotos">
+            <h2 id="titulo-pilotos">El trabajo de los pilotos</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <article>
+                        <h3><i class="fa-solid fa-helmet-safety" aria-hidden="true"></i> Precisión</h3>
+                        <p>Los pilotos necesitan concentración, reflejos y control para aprovechar cada curva y mantener un ritmo competitivo.</p>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article>
+                        <h3><i class="fa-solid fa-chart-line" aria-hidden="true"></i> Estrategia</h3>
+                        <p>La gestión de neumáticos, el combustible y las oportunidades de adelantamiento influyen en el resultado.</p>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article>
+                        <h3><i class="fa-solid fa-people-group" aria-hidden="true"></i> Equipo</h3>
+                        <p>La comunicación con los ingenieros ayuda a adaptar el automóvil y tomar decisiones durante la carrera.</p>
+                    </article>
+                </div>
             </div>
+        </section>
 
-            <div class="col-12 col-md-6">
-                <section class="h-100">
-                    <h2>Mercedes</h2>
-                    <p>
-                        Mercedes ha destacado por su desarrollo tecnológico
-                        y sus resultados en diferentes etapas de la categoría.
-                    </p>
-                </section>
-            </div>
-
-            <div class="col-12 col-md-6">
-                <section class="h-100">
-                    <h2>Red Bull Racing</h2>
-                    <p>
-                        Red Bull Racing se ha consolidado como una escudería
-                        competitiva, con importantes éxitos en campeonatos.
-                    </p>
-                </section>
-            </div>
-        </div>
-
-        <p class="my-4"><a href="circuitos.html">Explora los circuitos</a></p>
+        <section class="info-box" aria-labelledby="titulo-temporada">
+            <h2 id="titulo-temporada">Pilotos de la temporada</h2>
+            <p>Las alineaciones pueden cambiar entre temporadas. Consulta la información oficial para comprobar los pilotos actuales de cada escudería.</p>
+            <a href="https://www.formula1.com/" class="btn btn-danger" target="_blank" rel="noopener noreferrer">Consultar Fórmula 1 <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        </section>
     </main>
 
     <footer>
-        <p>F1 Apex | Proyecto académico sobre Fórmula 1.</p>
+        <div class="container">
+            <a class="navbar-brand" href="index.html">F1 <span>APEX</span></a>
+            <p>Velocidad, tecnología y pasión por el automovilismo.</p>
+            <div class="redes-sociales">
+                <a href="https://www.formula1.com/" target="_blank" rel="noopener noreferrer" aria-label="Sitio oficial de Fórmula 1"><i class="fa-solid fa-flag-checkered" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/f1/" target="_blank" rel="noopener noreferrer" aria-label="Fórmula 1 en Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/F1" target="_blank" rel="noopener noreferrer" aria-label="Fórmula 1 en YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+            </div>
+            <p>Proyecto académico F1 Apex · 2026</p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
