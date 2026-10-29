@@ -117,7 +117,6 @@ hr {
     opacity: 1;
 }
 
-/* NAVEGACIÓN */
 
 header {
     position: relative;
@@ -181,7 +180,6 @@ header {
     filter: invert(1);
 }
 
-/* BOTONES */
 
 .btn {
     display: inline-flex;
@@ -230,13 +228,6 @@ header {
     color: var(--negro);
 }
 
-/* PORTADA DEL INDEX */
-
-/*
-    Guarda tu imagen en la carpeta IMG.
-    Cambia únicamente el nombre de portada-f1.webp
-    por el nombre del archivo que quieras utilizar.
-*/
 
 .hero {
     position: relative;
@@ -294,7 +285,6 @@ header {
     margin: 0.25rem 0.35rem 0.25rem 0;
 }
 
-/* ETIQUETAS */
 
 .etiqueta {
     display: inline-block;
@@ -320,7 +310,6 @@ header {
     text-transform: uppercase;
 }
 
-/* ENCABEZADOS DE PÁGINA */
 
 .encabezado-pagina {
     margin: 1.5rem 0 2.5rem;
@@ -344,7 +333,6 @@ header {
     font-size: 1.05rem;
 }
 
-/* SECCIONES */
 
 .seccion {
     margin-top: 3rem;
@@ -365,7 +353,6 @@ header {
     color: var(--rojo);
 }
 
-/* TARJETAS SIMÉTRICAS */
 
 .card {
     display: flex;
@@ -430,7 +417,6 @@ header {
     background-color: var(--rojo) !important;
 }
 
-/* IMÁGENES DE CONTENIDO */
 
 .imagen-articulo {
     width: 100%;
@@ -454,7 +440,6 @@ header {
     border-radius: var(--radio);
 }
 
-/* BLOQUES DE INFORMACIÓN */
 
 .bloque-informacion {
     height: 100%;
@@ -490,7 +475,6 @@ header {
     margin-bottom: 1.25rem;
 }
 
-/* FORMULARIO DE CONTACTO */
 
 .formulario-contenedor {
     height: 100%;
@@ -598,7 +582,6 @@ textarea.form-control {
     color: var(--blanco);
 }
 
-/* PIE DE PÁGINA */
 
 footer {
     margin-top: 4rem;
@@ -620,7 +603,6 @@ footer p:last-child {
     font-size: 0.9rem;
 }
 
-/* TABLET Y PANTALLAS MEDIANAS */
 
 @media (max-width: 991.98px) {
     .navbar-nav {
@@ -652,8 +634,6 @@ footer p:last-child {
         margin-bottom: 2.5rem;
     }
 }
-
-/* CELULARES */
 
 @media (max-width: 575.98px) {
     body {
@@ -732,7 +712,6 @@ footer p:last-child {
     }
 }
 
-/* ACCESIBILIDAD: REDUCIR ANIMACIONES */
 
 @media (prefers-reduced-motion: reduce) {
     *,
