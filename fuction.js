@@ -1,4 +1,3 @@
-
 const formulario = document.getElementById("formulario-contacto");
 const resultado = document.getElementById("resultado-formulario");
 
@@ -22,15 +21,11 @@ if (formulario) {
         };
 
         if (datos.nombre.length < 3 || datos.mensaje.length < 10) {
-            if (window.Swal) {
-                Swal.fire({
-                    icon: "warning",
-                    title: "Revisa tus datos",
-                    text: "El nombre debe tener al menos 3 caracteres y la opinión al menos 10."
-                });
-            } else {
-                alert("El nombre debe tener al menos 3 caracteres y la opinión al menos 10.");
-            }
+            mostrarAlerta(
+                "warning",
+                "Revisa tus datos",
+                "El nombre debe tener al menos 3 caracteres y el mensaje al menos 10."
+            );
             return;
         }
 
@@ -39,34 +34,34 @@ if (formulario) {
                 localStorage.getItem("contactosF1Apex") || "[]"
             );
 
-            contactos.push(datos);
-            localStorage.setItem("contactosF1Apex", JSON.stringify(contactos));
-
-            if (window.Swal) {
-                Swal.fire({
-                    icon: "success",
-                    title: "¡Formulario registrado!",
-                    text: "Gracias por compartir tu opinión sobre la Fórmula 1."
-                });
-            } else {
-                alert("¡Formulario registrado correctamente!");
+            if (!Array.isArray(contactos)) {
+                throw new Error("Los datos guardados no tienen un formato válido.");
             }
+
+            contactos.push(datos);
+
+            localStorage.setItem(
+                "contactosF1Apex",
+                JSON.stringify(contactos)
+            );
 
             formulario.reset();
 
             if (resultado) {
                 resultado.textContent = "El registro se guardó en este navegador.";
             }
+
+            mostrarAlerta(
+                "success",
+                "¡Formulario registrado!",
+                "Gracias por compartir tu opinión sobre la Fórmula 1."
+            );
         } catch (error) {
-            if (window.Swal) {
-                Swal.fire({
-                    icon: "error",
-                    title: "No se pudo guardar",
-                    text: "El navegador no permitió almacenar los datos."
-                });
-            } else {
-                alert("No se pudieron guardar los datos en este navegador.");
-            }
+            mostrarAlerta(
+                "error",
+                "No se pudo guardar",
+                "El navegador no permitió almacenar los datos. Comprueba que el almacenamiento local esté disponible."
+            );
         }
     });
 
@@ -75,4 +70,19 @@ if (formulario) {
             resultado.textContent = "";
         }
     });
+}
+
+function mostrarAlerta(icono, titulo, mensaje) {
+    if (window.Swal) {
+        Swal.fire({
+            icon: icono,
+            title: titulo,
+            text: mensaje,
+            confirmButtonColor: "#e10600",
+            background: "#20242c",
+            color: "#f3f4f6"
+        });
+    } else {
+        alert(titulo + "\n\n" + mensaje);
+    }
 }

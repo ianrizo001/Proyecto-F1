@@ -7,28 +7,31 @@
     <meta name="description" content="Contacta con F1 Apex y comparte tus opiniones sobre las escuderías, los pilotos y la Fórmula 1.">
     <meta name="theme-color" content="#111318">
     <title>F1 Apex | Contacto</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
                 <a class="navbar-brand" href="index.html">F1 <span>APEX</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú de navegación">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="menuPrincipal">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
-                        <li class="nav-item"><a class="nav-link" href="equipos.html">Equipos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="circuitos.html">Circuitos</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Historia.html">Historia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Equipos.html">Equipos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Circuitos.html">Circuitos</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="Contacto.html">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -36,83 +39,98 @@
     </header>
 
     <main class="container">
-        <section aria-labelledby="titulo-contacto">
+        <section class="encabezado-pagina">
             <span class="etiqueta">QUEREMOS CONOCER TU OPINIÓN</span>
-            <h1 id="titulo-contacto">Contacto <span>F1 Apex</span></h1>
+            <h1>CONTACTO <span>F1 APEX</span></h1>
             <p>¿Tienes una escudería favorita o quieres compartir tu opinión sobre la Fórmula 1? Completa el formulario.</p>
         </section>
 
-        <div class="row g-4">
+        <div class="row g-4 align-items-stretch">
             <section class="col-lg-7" aria-labelledby="titulo-formulario">
-                <h2 id="titulo-formulario">Envíanos un mensaje</h2>
-                <form id="formulario-contacto">
-                    <div class="mb-3">
-                        <label for="nombre">Nombre completo</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" minlength="3" maxlength="80" autocomplete="name" required>
-                    </div>
+                <div class="formulario-contenedor h-100">
+                    <h2 id="titulo-formulario">Envíanos un mensaje</h2>
 
-                    <div class="mb-3">
-                        <label for="correo">Correo electrónico</label>
-                        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" autocomplete="email" required>
-                    </div>
+                    <form id="formulario-contacto">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre completo</label>
+                            <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" minlength="3" maxlength="80" autocomplete="name" required>
+                        </div>
 
-                    <div class="mb-3">
-                        <label for="edad">Edad</label>
-                        <input type="number" id="edad" name="edad" min="13" max="100" placeholder="Introduce tu edad" required>
-                    </div>
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">Correo electrónico</label>
+                            <input class="form-control" type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" autocomplete="email" required>
+                        </div>
 
-                    <div class="mb-3">
-                        <label for="equipo">Escudería favorita</label>
-                        <select id="equipo" name="equipo" required>
-                            <option value="">Selecciona una escudería</option>
-                            <option value="Ferrari">Ferrari</option>
-                            <option value="McLaren">McLaren</option>
-                            <option value="Mercedes">Mercedes</option>
-                            <option value="Red Bull Racing">Red Bull Racing</option>
-                            <option value="Aston Martin">Aston Martin</option>
-                            <option value="Williams">Williams</option>
-                            <option value="Otra">Otra</option>
-                        </select>
-                    </div>
+                        <div class="mb-3">
+                            <label for="edad" class="form-label">Edad</label>
+                            <input class="form-control" type="number" id="edad" name="edad" min="13" max="100" placeholder="Introduce tu edad" required>
+                        </div>
 
-                    <div class="mb-3">
-                        <label for="tema">Tema del mensaje</label>
-                        <select id="tema" name="tema" required>
-                            <option value="">Selecciona un tema</option>
-                            <option value="Escuderías y pilotos">Escuderías y pilotos</option>
-                            <option value="Circuitos">Circuitos</option>
-                            <option value="Historia de la F1">Historia de la F1</option>
-                            <option value="Sugerencias">Sugerencias para la página</option>
-                            <option value="Otro">Otro</option>
-                        </select>
-                    </div>
+                        <div class="mb-3">
+                            <label for="equipo" class="form-label">Escudería favorita</label>
+                            <select class="form-select" id="equipo" name="equipo" required>
+                                <option value="">Selecciona una escudería</option>
+                                <option value="Ferrari">Ferrari</option>
+                                <option value="McLaren">McLaren</option>
+                                <option value="Mercedes">Mercedes</option>
+                                <option value="Red Bull Racing">Red Bull Racing</option>
+                                <option value="Aston Martin">Aston Martin</option>
+                                <option value="Williams">Williams</option>
+                                <option value="Otra">Otra</option>
+                            </select>
+                        </div>
 
-                    <div class="mb-3">
-                        <label for="mensaje">Tu mensaje</label>
-                        <textarea id="mensaje" name="mensaje" rows="5" minlength="10" maxlength="1000" placeholder="Escribe aquí tu opinión o pregunta..." required></textarea>
-                    </div>
+                        <div class="mb-3">
+                            <label for="tema" class="form-label">Tema del mensaje</label>
+                            <select class="form-select" id="tema" name="tema" required>
+                                <option value="">Selecciona un tema</option>
+                                <option value="Escuderías y pilotos">Escuderías y pilotos</option>
+                                <option value="Circuitos">Circuitos</option>
+                                <option value="Historia de la F1">Historia de la F1</option>
+                                <option value="Sugerencias">Sugerencias para la página</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
 
-                    <div class="checkbox-contenedor">
-                        <input type="checkbox" id="acepto" name="acepto" required>
-                        <label for="acepto">Confirmo que los datos proporcionados son correctos y acepto que se utilicen para atender este mensaje.</label>
-                    </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Tu mensaje</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="5" minlength="10" maxlength="1000" placeholder="Escribe aquí tu opinión o pregunta..." required></textarea>
+                        </div>
 
-                    <button type="submit"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enviar mensaje</button>
-                    <p id="resultado-formulario" role="status" aria-live="polite"></p>
-                </form>
+                        <div class="checkbox-contenedor">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="acepto" name="acepto" required>
+                                <label class="form-check-label" for="acepto">Confirmo que los datos proporcionados son correctos y acepto que se utilicen para atender este mensaje.</label>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-danger" type="submit">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                            Enviar mensaje
+                        </button>
+
+                        <p id="resultado-formulario" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
             </section>
 
             <aside class="col-lg-5" aria-labelledby="titulo-informacion">
-                <h2 id="titulo-informacion">F1 Apex</h2>
-                <article>
+                <article class="bloque-informacion h-100">
+                    <h2 id="titulo-informacion">F1 Apex</h2>
+
                     <h3><i class="fa-solid fa-flag-checkered" aria-hidden="true"></i> Nuestra pasión</h3>
                     <p>Este espacio está dedicado a quienes disfrutan de la velocidad, la estrategia y la tecnología del automovilismo.</p>
+
                     <hr>
+
                     <h3><i class="fa-solid fa-users" aria-hidden="true"></i> Comunidad</h3>
                     <p>Comparte tus ideas y dinos qué equipos, pilotos o circuitos te gustaría conocer mejor.</p>
+
                     <hr>
+
                     <h3><i class="fa-solid fa-globe" aria-hidden="true"></i> Sitio oficial</h3>
                     <p>Para consultar información oficial sobre la categoría, visita la página de Fórmula 1.</p>
+
                     <a href="https://www.formula1.com/" class="btn btn-danger" target="_blank" rel="noopener noreferrer">Visitar Fórmula 1</a>
                 </article>
             </aside>
@@ -123,17 +141,12 @@
         <div class="container">
             <a class="navbar-brand" href="index.html">F1 <span>APEX</span></a>
             <p>Velocidad, tecnología y pasión por el automovilismo.</p>
-            <div class="redes-sociales">
-                <a href="https://www.formula1.com/" target="_blank" rel="noopener noreferrer" aria-label="Sitio oficial de Fórmula 1"><i class="fa-solid fa-flag-checkered" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/f1/" target="_blank" rel="noopener noreferrer" aria-label="Fórmula 1 en Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-                <a href="https://www.youtube.com/F1" target="_blank" rel="noopener noreferrer" aria-label="Fórmula 1 en YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
-            </div>
             <p>Proyecto académico F1 Apex · 2026</p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="js/script.js"></script>
+    <script src="fuction.js"></script>
 </body>
 </html>

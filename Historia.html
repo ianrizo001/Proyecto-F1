@@ -4,31 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Conoce la historia, evolución y avances tecnológicos de la Fórmula 1.">
+    <meta name="description" content="Conoce la historia y evolución de la Fórmula 1.">
     <meta name="theme-color" content="#111318">
     <title>F1 Apex | Historia</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
                 <a class="navbar-brand" href="index.html">F1 <span>APEX</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú de navegación">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="menuPrincipal">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="historia.html">Historia</a></li>
-                        <li class="nav-item"><a class="nav-link" href="equipos.html">Equipos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="circuitos.html">Circuitos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="Historia.html">Historia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Equipos.html">Equipos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Circuitos.html">Circuitos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -36,58 +39,56 @@
     </header>
 
     <main class="container">
-        <section aria-labelledby="titulo-historia">
-            <span class="etiqueta">DESDE 1950</span>
-            <h1 id="titulo-historia">La historia de <span>Fórmula 1</span></h1>
-            <p>Desde sus primeras temporadas hasta los monoplazas actuales, la Fórmula 1 ha evolucionado en velocidad, seguridad, tecnología y competencia.</p>
-            <img class="img-fluid rounded-4 my-3" src="img/historia.jpg" alt="Automóvil de competición que representa la evolución del automovilismo" loading="lazy">
+        <section class="encabezado-pagina">
+            <span class="etiqueta">DESDE 1950 HASTA LA ACTUALIDAD</span>
+            <h1>LA HISTORIA DE <span>LA FÓRMULA 1</span></h1>
+            <p>La categoría ha evolucionado gracias al talento de los pilotos, los avances tecnológicos y los cambios en las reglas de competición.</p>
         </section>
 
-        <section aria-labelledby="titulo-inicios">
-            <h2 id="titulo-inicios">Los primeros años</h2>
-            <article>
-                <h3>El nacimiento del campeonato</h3>
-                <p>El Campeonato Mundial de Pilotos de Fórmula 1 comenzó en 1950. Desde sus primeras carreras, reunió a pilotos y fabricantes que buscaban destacar en una de las competencias más exigentes del automovilismo.</p>
-                <p>Con el paso de los años, el campeonato incorporó nuevos circuitos, equipos y avances que transformaron la forma de competir.</p>
-            </article>
-        </section>
+        <section class="seccion">
+            <div class="seccion-titulo">
+                <span class="subtitulo">UNA EVOLUCIÓN CONSTANTE</span>
+                <h2>DEL PASADO AL <span>PRESENTE</span></h2>
+                <p>Desde las primeras carreras hasta los monoplazas actuales, cada época ha dejado avances importantes en el automovilismo.</p>
+            </div>
 
-        <section aria-labelledby="titulo-evolucion">
-            <h2 id="titulo-evolucion">Una evolución constante</h2>
-            <div class="row g-4">
+            <img src="IMG/Evolucion.webp" class="imagen-evolucion img-fluid rounded-4" alt="Evolución de los monoplazas de Fórmula 1" loading="lazy">
+
+            <div class="row g-4 mt-3 align-items-stretch">
                 <div class="col-md-6">
-                    <article>
-                        <h3><i class="fa-solid fa-gears" aria-hidden="true"></i> Tecnología</h3>
-                        <p>Los motores, la aerodinámica, los materiales y los sistemas electrónicos han cambiado de manera importante el rendimiento de los monoplazas.</p>
+                    <article class="bloque-informacion h-100">
+                        <h3><i class="fa-solid fa-flag-checkered" aria-hidden="true"></i> 1950: el comienzo</h3>
+                        <p>En 1950 comenzó el Campeonato Mundial de Pilotos de Fórmula 1. Desde sus primeras temporadas, la categoría reunió a fabricantes y pilotos en circuitos de diferentes países.</p>
                     </article>
                 </div>
+
                 <div class="col-md-6">
-                    <article>
-                        <h3><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Seguridad</h3>
-                        <p>Las estructuras de protección, los cascos, los sistemas de retención y las mejoras en los circuitos han ayudado a reducir riesgos para los pilotos.</p>
+                    <article class="bloque-informacion h-100">
+                        <h3><i class="fa-solid fa-gears" aria-hidden="true"></i> Años 70 y 80</h3>
+                        <p>Los equipos desarrollaron nuevas soluciones aerodinámicas y mecánicas. La innovación y las rivalidades deportivas ayudaron a aumentar el interés por la categoría.</p>
                     </article>
                 </div>
+
                 <div class="col-md-6">
-                    <article>
-                        <h3><i class="fa-solid fa-gauge-high" aria-hidden="true"></i> Rendimiento</h3>
-                        <p>La búsqueda de mayor velocidad ha impulsado el desarrollo de motores eficientes, mejores frenos y soluciones aerodinámicas.</p>
+                    <article class="bloque-informacion h-100">
+                        <h3><i class="fa-solid fa-microchip" aria-hidden="true"></i> Años 90 y 2000</h3>
+                        <p>La electrónica, la simulación y el análisis de datos adquirieron una mayor importancia en el desarrollo de los vehículos y en la preparación de las carreras.</p>
                     </article>
                 </div>
+
                 <div class="col-md-6">
-                    <article>
-                        <h3><i class="fa-solid fa-leaf" aria-hidden="true"></i> Eficiencia</h3>
-                        <p>La categoría ha desarrollado unidades de potencia híbridas y continúa trabajando en tecnologías y combustibles con menor impacto ambiental.</p>
+                    <article class="bloque-informacion h-100">
+                        <h3><i class="fa-solid fa-leaf" aria-hidden="true"></i> La era moderna</h3>
+                        <p>La seguridad, la eficiencia energética y la tecnología siguen siendo aspectos centrales en la evolución de los monoplazas y de la competición.</p>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section aria-labelledby="titulo-importancia">
-            <h2 id="titulo-importancia">¿Por qué es tan importante?</h2>
-            <div class="info-box">
-                <p>La Fórmula 1 combina deporte, ingeniería, estrategia y trabajo en equipo. Los datos recopilados durante cada sesión ayudan a decidir los ajustes del automóvil, la estrategia de carrera y el momento adecuado para cambiar neumáticos.</p>
-                <a href="equipos.html" class="btn btn-danger">Conocer las escuderías</a>
-            </div>
+        <section class="info-box my-5">
+            <h2>Una categoría en <span>constante cambio</span></h2>
+            <p>La Fórmula 1 continúa adaptándose a nuevos reglamentos y avances tecnológicos. Su historia muestra cómo la competición impulsa el desarrollo de soluciones cada vez más complejas.</p>
+            <a href="Equipos.html" class="btn btn-danger">Conocer las escuderías</a>
         </section>
     </main>
 
@@ -95,15 +96,11 @@
         <div class="container">
             <a class="navbar-brand" href="index.html">F1 <span>APEX</span></a>
             <p>Velocidad, tecnología y pasión por el automovilismo.</p>
-            <div class="redes-sociales">
-                <a href="https://www.formula1.com/" target="_blank" rel="noopener noreferrer" aria-label="Sitio oficial de Fórmula 1"><i class="fa-solid fa-flag-checkered" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/f1/" target="_blank" rel="noopener noreferrer" aria-label="Fórmula 1 en Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-                <a href="https://www.youtube.com/F1" target="_blank" rel="noopener noreferrer" aria-label="Fórmula 1 en YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
-            </div>
             <p>Proyecto académico F1 Apex · 2026</p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="fuction.js"></script>
 </body>
 </html>
